@@ -1,0 +1,32 @@
+<footer class="footer">
+    <div class="container">
+        <div class="footer-wrap">
+            <div class="left-content">
+                <ul class="menu-list">
+                    <li><a routerLink="/pages/about" title="ABOUT">ABOUT</a> </li>
+                    <li><a routerLink="/pages/blog" title="HOW IT WORKS">HOW IT WORK</a> </li>
+                    <li><a routerLink="/pages/enviroment" title="ENVIROMENT">ENVIROMENT</a> </li>
+                    <li><a routerLink="/pages/listing" title="BUSINESS">BUSINESS</a> </li>
+                    <li><a routerLink="/pages/blog-detail" title="BLOG">BLOG</a> </li>
+                    <li><a routerLink="/pages/" title="FAQ">FAQ</a> </li>
+                    <li><a routerLink="/pages/conatact" title="CONTACT">CONTACT</a> </li>
+                </ul>
+                <p>© Copyright 2017 sell4cash All Right Reserved. Terms & Condition | Privacy Policy</p>
+
+            </div>
+            <div class="right-content">
+                <p>Sign up for the email newsletter</p>
+                <div class="custom-form-field">
+                    <mat-form-field appearance="outline">
+                        <input matInput placeholder="Enter your email address">
+                    </mat-form-field>
+                    <i><img src="../../../assets/imges/text-btn.png" alt="text-btn"> </i>
+                </div>
+                <ul class="social-icon-list">
+                    <li *ngFor="let icon of data"><a routerLink="" title="{{icon.name}}"><img src="{{icon.img}}" alt="{{icon.name}}"> </a> </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

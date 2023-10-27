@@ -1,0 +1,33 @@
+@import "../../../assets/css/main.scss";
+.find-devices-section{
+    padding: 100px 0;
+    text-align: center;
+    background-image: url(../../../assets/imges/find-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include bp(md-max){
+        padding: 50px 0;
+    }
+    @include bp(smlg-max){
+        padding: 30px 0;
+    }
+    h2{
+        margin-bottom: 15px !important;
+    }
+    .btn-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    p{
+        margin-bottom: 30px;
+    }
+    .btn-wrapper{
+        .btn{
+            font-size: 16px !important;
+            min-width: 225px !important;
+            @include bp(smlg-max){
+                font-size: 14px !important;
+            }
+        }
+    }
+}

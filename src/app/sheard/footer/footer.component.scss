@@ -1,0 +1,121 @@
+@import "../../../assets/css/main.scss";
+
+.footer {
+    padding: 100px 0;
+    background-color: $gray_blur2;
+
+    @include bp(md-max) {
+        padding: 30px 0;
+    }
+
+    p {
+        color: $white;
+    }
+}
+
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+
+    @include bp(smlg-max) {
+        flex-direction: column;
+    }
+
+    .left-content {
+        padding-right: 15px;
+@include bp(md-max){
+    padding-right: 10px;
+}
+        @include bp(smlg-max) {
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px !important;
+        }
+
+        .menu-list {
+            display: flex;
+            list-style-type: none;
+            margin: 0 0 51px -16px;
+
+            @include bp(md-max) {
+                margin: 0 0 15px -5px;
+            }
+
+            @include bp(xs-max) {
+                flex-direction: column;
+            }
+
+            a {
+                padding: 0px 16px;
+                color: $white;
+                text-decoration: none;
+                transition: all 0.3s;
+                font-size: 16px;
+
+                @include bp(md-max) {
+                    font-size: 14px;
+                    padding: 0px 5px;
+                }
+
+                &:hover {
+                    color: $green_text;
+                }
+            }
+        }
+    }
+
+    .right-content {
+        .custom-form-field {
+            position: relative;
+            background-color: $white;
+            margin-bottom: 30px;
+            min-width: 400px;
+
+            @include bp(xlg-max) {
+                min-width: 230px;
+            }
+
+            @include bp(smlg-max) {
+                max-width: 350px;
+            }
+
+            i {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                background-color: $green_text;
+                padding: 10px;
+
+                @include bp(xlg-max) {
+                    padding: 0px;
+                }
+            }
+        }
+
+        p {
+            font-size: 15px;
+        }
+
+        .social-icon-list {
+            display: flex;
+            list-style: none;
+            margin-right: -20px;
+            justify-content: end;
+            align-items: center;
+
+            li {
+                margin-right: 23px;
+
+                a:hover {
+                    img {
+                        transition: all 0.3s;
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}

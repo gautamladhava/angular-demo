@@ -1,0 +1,175 @@
+@import "../../../assets/css/main.scss";
+
+.header {
+    .top-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 18px 0;
+        align-items: center;
+    }
+
+    .left-content {
+        .header-logo {
+            img {
+                @include bp(md-max) {
+                    width: 180px;
+                    @include bp(xs-max){
+                        width: 130px;
+                    }
+                }
+            }
+        }
+    }
+
+    .right-content {
+        .contact-list {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            margin-right: -15px;
+            margin-bottom: 5px;
+
+            li {
+                margin-right: 15px;
+                display: flex;
+                align-items: center;
+                font-size: 15px;
+
+                a {
+                    text-decoration: none;
+                    color: $text_color;
+                }
+
+                i {
+                    margin-right: 7px;
+                }
+            }
+        }
+    }
+
+    .bottom-header {
+        background-color: $blue;
+
+        .nav-list {
+            display: flex;
+            list-style: none;
+            transition: all 0.5s;
+            &:last-child {
+                border-right: 0 !important;
+            }
+            @include bp(smlg-max) {
+                position: fixed;
+                top: 92px;
+                bottom: 0;
+                right: -300px;
+                height: 100%;
+                background-color: $white;
+                width: 300px;
+                flex-direction: column;
+                align-items: center;
+                padding: 40px 20px;
+                
+                @include bp(xs-max){
+                    top: 66px;
+                }
+                @include bp(xxxs-max){
+                    width: 100%;
+                    right: -100%;
+                }
+            }
+
+            li {
+                border-right: 1px solid $white;
+                &:last-child {
+                    border-right: 0 !important;
+                }
+                @include bp(smlg-max) {
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 5px;
+                }              
+
+                a {
+                    color: $white;
+                    padding: 15px 25px;
+                    text-decoration: none;
+                    transition: all 0.5s;
+                    font-size: 16px;
+                    @include bp(md-max){
+                        padding: 15px ;
+                    }
+                    @include bp(smlg-max) {
+                        color: $black;
+                        width: 100%;
+                        font-size: 15px;
+                        padding: 10px;
+                    }
+                    &:hover {
+                        background-color: $green_text;
+                        @include bp(smlg-max) {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+
+            li {
+                &.desktop-hide {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 10px;
+
+                    a {
+                        text-decoration: none;
+                        color: $text_color;
+                        padding: 0;
+                        width: auto;
+                        &:hover{
+                            background-color: transparent;
+                        }
+                    }
+
+                    i {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.button-wrap {
+    display: flex;
+    justify-content: end;
+    @include bp(smlg-max) {
+        flex-direction: column;
+    }
+
+    .btn {
+        border: 1px solid $gray_blur;
+        border-radius: 0 !important;
+        min-height: auto;
+            @include bp(smlg-max){
+                min-width: 225px !important;
+        }
+
+        &:first-child {
+            border-right: 0 !important;
+
+            @include bp(smlg-max) {
+                border-right: 1px solid $gray_blur !important;
+                margin-bottom: 10px;
+            }
+        }
+
+        &.gray-btn {
+            background-color: $gray_blur1;
+        }
+
+        i {
+            margin-right: 10px;
+            display: flex !important;
+        }
+    }
+}

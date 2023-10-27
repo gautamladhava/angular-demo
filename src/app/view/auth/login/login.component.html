@@ -1,0 +1,40 @@
+<div class="auth-wrapper">
+    <h4>Log In</h4>
+    <div class="login-wrapper">
+        <div class="left-content">
+            <p>Log in instantly with Facebook and Google+</p>
+            <div class="button-wrapper">
+                <a class="btn auto-login-btn facebook-btn" mat-button aria-label="Example icon button with a home icon" title="Facebook Login">
+                    <i><img src="../../../../assets/imges/facebookwhite.png" alt="facebook-button"></i>Log In with
+                    Facebook
+                </a>
+                <a class="btn auto-login-btn google-btn" mat-button aria-label="Example icon button with a home icon" title="Google Login">
+                    <i><img src="../../../../assets/imges/google+white.png" alt="google-button"></i>Log In with Google+
+                </a>
+            </div>
+            <div class="or-block">
+                OR
+            </div>
+        </div>
+        <div class="right-content">
+            <p>Log in with Sell4cash.com account</p>
+            <div class="custom-form-field">
+                <mat-form-field appearance="outline">
+                    <input matInput placeholder="Username or Email">
+                  </mat-form-field>                
+            </div>
+            <div class="custom-form-field">
+                <mat-form-field appearance="outline" >
+                    <input matInput placeholder="Password">
+                  </mat-form-field>                
+            </div>
+            <a routerLink="/forgot-pwd" title="FORGOT PASSWORD" class="green-text">
+                I forgot my password
+            </a>
+            <button mat-raised-button color="primary" class="btn primary-btn">Log In</button>
+        </div>
+    </div>
+    <div class="bottom-content">
+        <p>Don't have an account? <a routerLink="/sign-in" title="SING UP" class="green-text"> SIGN UP</a> </p>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+
+
+    <div class="search-blog">
+        <h6>Archives</h6>
+        <div class="custom-form-field ">
+            <mat-form-field appearance="outline">
+                <mat-select placeholder="Select Month">
+                    <mat-option value="one">January</mat-option>
+                    <mat-option value="two">March</mat-option>
+                    <mat-option value="two">May</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="blog-type">
+        <div class="categories-blog">
+            <h6>Categories</h6>
+            <ul class="blog-list">
+                <li *ngFor="let data1 of categories">{{data1}}</li>
+            </ul>
+        </div>
+        <div class="popular-blog">
+            <h6>Popular Tags</h6>
+            <ul class="blog-list">
+                <li *ngFor="let data2 of popular"><span>{{data2}}</span></li>
+            </ul>
+        </div>
+    </div>

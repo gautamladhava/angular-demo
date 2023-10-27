@@ -1,0 +1,138 @@
+<section class="inner-banner-section">
+    <div class="container">
+        <app-search></app-search>
+    </div>
+</section>
+<section class="request-quote-section">
+    <div class="container">
+        <h2>Request A Quote</h2>
+        <div class="personal-details-block">
+            <h5>Personal Details</h5>
+            <div class="custom-row three-col">
+                <span class="main-label">Full Name</span>
+                <div class="custom-form-field">
+                    <mat-form-field appearance="outline">
+                        <input matInput>
+                    </mat-form-field>
+                    <label>Last Name</label>
+                </div>
+                <div class="custom-form-field">
+                    <mat-form-field appearance="outline">
+                        <input matInput>
+                    </mat-form-field>
+                    <label>First Name</label>
+
+                </div>
+                <div class="custom-form-field">
+                    <mat-form-field appearance="outline">
+                        <input matInput>
+                    </mat-form-field>
+                    <label>Middle Name</label>
+                </div>
+            </div>
+            <div class="custom-row two-col">
+                <div class="form-field-wrap">
+                    <span class="main-label">Email ID</span>
+                    <div class="custom-form-field">
+                        <mat-form-field appearance="outline">
+                            <input matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="form-field-wrap">
+                    <span class="main-label">Telephone Number</span>
+                    <div class="custom-form-field">
+                        <mat-form-field appearance="outline">
+                            <input matInput>
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-row one-col">
+                <span class="main-label">Address</span>
+                <div class="custom-form-field">
+                    <mat-form-field appearance="outline">
+                        <input matInput>
+                    </mat-form-field>
+                    <label>Please enter Unit / Number, name Of Building, Street</label>
+                </div>
+
+            </div>
+            <div class="custom-row">
+                <span class="main-label blank-label"></span>
+                <div class="custom-form-field city-field">
+                    <mat-form-field appearance="outline">
+                        <input matInput>
+                    </mat-form-field>
+                    <label>City</label>
+                </div>
+                <div class="custom-form-field state-field">
+                    <mat-form-field appearance="outline">
+                        <mat-select>
+                            <mat-option value="one">January</mat-option>
+                            <mat-option value="two">March</mat-option>
+                            <mat-option value="two">May</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <label>State</label>
+                </div>
+                <div class="custom-form-field zip-field">
+                    <mat-form-field appearance="outline">
+                        <input matInput>
+                    </mat-form-field>
+                    <label>Zip Code</label>
+                </div>
+
+            </div>
+        </div>
+        <div class="devices-details-block">
+            <h5>Devices Details</h5>
+            <div class="custom-row device-col">
+                <span class="main-label">Device</span>
+                <div class="custom-form-field">
+                    <mat-form-field appearance="outline">
+                        <mat-select>
+                            <mat-option value="one">January</mat-option>
+                            <mat-option value="two">March</mat-option>
+                            <mat-option value="two">May</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                    <label>Choose Device Brand</label>
+                </div>
+                <div class="custom-form-field">
+                    <mat-form-field appearance="outline">
+                        <input matInput>
+                    </mat-form-field>
+                    <label>Device Model </label>
+
+                </div>
+            </div>
+            <div class="ratting-wrap">
+                <span class="main-label">Cosmetis</span>
+                <ul class="ratting-list">
+                    <li><img src="../../../../assets/imges/star.png"> </li>
+                    <li><img src="../../../../assets/imges/star.png"> </li>
+                    <li><img src="../../../../assets/imges/star.png"> </li>
+                    <li><img src="../../../../assets/imges/star-gray.png"> </li>
+                </ul>
+                <div class="radio-wrap">
+                    <mat-radio-group aria-label="Select an option">
+                        <mat-radio-button value="1">Heavily Used</mat-radio-button>
+                        <mat-radio-button value="2">Used</mat-radio-button>
+                        <mat-radio-button value="3">In a Good Condition</mat-radio-button>
+                        <mat-radio-button value="4">Like New</mat-radio-button>         
+                    </mat-radio-group>
+                </div>
+
+            </div>
+            <div class="switch-wrap">
+                <mat-slide-toggle> Sim Lock / Pass Code / iCloud </mat-slide-toggle>
+                <mat-slide-toggle> iCloud / Password or Any Kind of Protection</mat-slide-toggle>
+            </div>
+            <div class="btn-wrapper">
+                <button mat-raised-button class="btn primary-btn"> Submit</button>
+            </div>
+        </div>
+    </div>
+</section>
+<app-find-devices></app-find-devices>

@@ -1,0 +1,64 @@
+<section class="inner-banner-section">
+    <div class="container">
+        <app-search></app-search>
+    </div>
+</section>
+<section class="filter-section">
+    <div class="container">
+        <div class="filter-wrap">
+            <div class="custom-row">
+                <div class="title-box"> FILTER:</div>
+                <div class="custom-form-field ">
+                    <label>Device Category</label>
+                    <mat-form-field appearance="outline">
+                        <mat-select placeholder="Apple">
+                            <mat-option value="one">January</mat-option>
+                            <mat-option value="two">March</mat-option>
+                            <mat-option value="two">May</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="custom-form-field ">
+                    <label>Device Type</label>
+                    <mat-form-field appearance="outline">
+                        <mat-select placeholder="iPhone">
+                            <mat-option value="one">January</mat-option>
+                            <mat-option value="two">March</mat-option>
+                            <mat-option value="two">May</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div class="custom-form-field ">
+                    <label>Sort By</label>
+                    <mat-form-field appearance="outline">
+                        <mat-select placeholder="Device Name">
+                            <mat-option value="one">January</mat-option>
+                            <mat-option value="two">March</mat-option>
+                            <mat-option value="two">May</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="devices-section">
+    <div class="container">
+        <h2>Apple Devices</h2>
+        <ul class="devices-list">
+            <li *ngFor="let devices of table">
+                <div class="devices-item">
+                    <img src="{{devices.img}}" alt="devices">
+                    <p>{{devices.name}} </p>
+                </div>
+            </li>
+        </ul>
+        <ul class="pagination">
+            <li><a routerLink="/"> 1</a> </li>
+            <li><a routerLink="/"> 2</a> </li>
+            <li><a routerLink="/"> 3</a> </li>
+            <li><a routerLink="/"> 4</a> </li>
+        </ul>
+    </div>
+</section>
+<app-find-devices></app-find-devices>

@@ -1,0 +1,156 @@
+@import ".././../../../assets/css/main.scss";
+
+
+.login-wrapper {
+    display: flex;
+    margin: 0 -45px;
+    padding: 20px 0;
+    flex-wrap: wrap;
+
+    @include bp(smlg-max) {
+        margin: 0 -30px;
+    }
+
+    @include bp(xs-max) {
+        margin: 0;
+    }
+
+    p {
+        max-width: 180px;
+        margin-bottom: 22px;
+    }
+
+    .left-content {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 0 45px;
+        position: relative;
+
+        @include bp(smlg-max) {
+            padding: 0 30px;
+        }
+
+        @include bp(xs-max) {
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding: 0 0 20px 0;
+        }
+
+        .or-block {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            right: -15px;
+            transform: translateY(-50%);
+            z-index: 2;
+            color: $white;
+            background-color: $gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @include bp(xs-max) {
+                bottom: -15px;
+                top: auto;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        &::after {
+            position: absolute;
+            height: 100%;
+            width: 2px;
+            background-color: $gray;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            content: "";
+
+            @include bp(xs-max) {
+                height: 2px;
+                width: 100%;
+                top: auto;
+                left: 0;
+            }
+        }
+
+        .button-wrapper {
+            .btn {
+                white-space: nowrap;
+                border-radius: 0px !important;
+                min-width: 225px !important;
+                margin-bottom: 10px;
+                padding: 0 !important;
+                color: #ffffff;
+                justify-content: start !important;
+
+                i {
+                    padding: 10px;
+                    margin-right: 20px;
+
+                    img {
+                        height: 21px;
+                        width: 21px;
+                        object-fit: contain;
+                    }
+                }
+
+                &.facebook-btn {
+                    background-color: $blur_blue !important;
+                    border: 1px solid $blur_blue1 !important;
+
+                    i {
+                        border-right: 1px solid $blur_blue1 !important;
+                    }
+                }
+
+                &.google-btn {
+                    background-color: $blur_red !important;
+                    border: 1px solid $blur_red1 !important;
+
+                    i {
+                        border-right: 1px solid $blur_red1;
+                    }
+                }
+            }
+        }
+    }
+
+    .right-content {
+        padding: 0 45px;
+        width: 100%;
+        flex: 0 0 50%;
+        max-width: 50%;
+
+        @include bp(smlg-max) {
+            padding: 0 30px;
+        }
+
+        @include bp(xs-max) {
+            padding: 20px 0 0 0;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            text-align: right;
+            width: 100%;
+            margin-bottom: 10px !important;
+        }
+    }
+
+}
+
+.bottom-content {
+    padding: 20PX 0;
+    text-align: center;
+    border-top: 1px solid $gray;
+
+    a {
+        text-decoration: none;
+    }
+}

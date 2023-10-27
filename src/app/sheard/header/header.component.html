@@ -1,0 +1,77 @@
+<header class="header">
+    <div class="container">
+        <div class="top-header">
+            <div class="left-content">
+                <a routerLink="/pages/" class="header-logo" title="Sell4Cash"><img src="../../../assets/imges/logo.png"
+                        alt="header-logo"> </a>
+            </div>
+            <div class="right-content desktop-show">
+                <ul class="contact-list">
+                    <li><i><img src="../../../assets/imges/toll-free.png" alt="toll-free img"> </i>Toll Free: <a
+                            routerLink="" title="Call"> +31 541662944</a> </li>
+                    <li><i><img src="../../../assets/imges/mail.png" alt="mail"> </i><a routerLink=""
+                            title="Mail">info@sell4cash.com</a> </li>
+                    <li><i><img src="../../../assets/imges/language.png" alt="language"> </i>
+                        <div class="custom-form-field ">
+                            <mat-form-field appearance="outline">
+                                <mat-select [formControl]="colorControl">
+                                    <mat-option value="one">English</mat-option>
+                                    <mat-option value="two">Hindi</mat-option>
+                                    <mat-option value="two">Gujrati</mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </li>
+                </ul>
+                <div class="button-wrap">
+                    <button mat-flat-button class="btn gray-btn" (click)="openDialog()"><i><img
+                                src="../../../assets/imges/sign-in.png" alt="sign-in img"> </i> Sign In to Your
+                        Account</button>
+                    <button mat-flat-button class="btn " (click)="openDialogs()"><i><img
+                                src="../../../assets/imges/create-account.png" alt="create-accounta img"> </i> Create a
+                        New Account</button>
+                </div>
+            </div>
+            <div class="toggle-icon desktop-hide" (click)="toggle_menu()">
+                <div class="bar1 bar"></div>
+                <div class="bar2 bar"></div>
+                <div class="bar3 bar"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-header">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a routerLink="/pages/about" title="ABOUT">ABOUT</a> </li>
+                <li><a routerLink="/pages/blog" title="HOW IT WORKS">HOW IT WORKS</a> </li>
+                <li><a routerLink="/pages/enviroment" title="ENVIROMENT">ENVIROMENT</a> </li>
+                <li><a routerLink="/pages/listing" title="BUSINESS">BUSINESS</a> </li>
+                <li><a routerLink="/pages/" title="FAQ">FAQ</a> </li>
+                <li><a routerLink="/pages/conatact" title="CONTACT">CONTACT</a> </li>
+                <li class="desktop-hide"><i><img src="../../../assets/imges/toll-free.png" alt="toll-free img"> </i>Toll
+                    Free: <a routerLink="" title="Call"> +31 541662944</a> </li>
+                <li class="desktop-hide"><i><img src="../../../assets/imges/mail.png" alt="mail"> </i><a routerLink=""
+                        title="Mail">info@sell4cash.com</a> </li>
+                <li class="desktop-hide"><i><img src="../../../assets/imges/language.png" alt="language"> </i>
+                    <div class="custom-form-field ">
+                        <mat-form-field appearance="outline">
+                            <mat-select [formControl]="colorControl">
+                                <mat-option value="one">English</mat-option>
+                                <mat-option value="two">Hindi</mat-option>
+                                <mat-option value="two">Gujrati</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </li>
+                <li class="desktop-hide button-wrap">
+                    <button mat-flat-button class="btn gray-btn" (click)="openDialog()"><i><img src="../../../assets/imges/sign-in.png"
+                                alt="sign-in img"> </i> Sign In to Your Account</button>
+                    <button mat-flat-button class="btn " (click)="openDialogs()"><i><img src="../../../assets/imges/create-account.png"
+                                alt="create-accounta img"> </i> Create a
+                        New Account</button>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</header>

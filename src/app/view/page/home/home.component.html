@@ -1,0 +1,118 @@
+<section class="banner-section">
+    <div class="container-fluid">
+            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig"
+                (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+                (beforeChange)="beforeChange($event)">
+                <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                    <img src="{{ slide.img }}" alt="" width="100%">
+                </div>
+            </ngx-slick-carousel>
+    </div>
+    <div class="container">
+        <div class="content-block">
+            <h3>
+                Select Your <span class="bold-text">Choice From Thousands </span> of Devices <span
+                    class="green-text bold-text">To Sell</span>
+            </h3>
+        </div>
+    </div>
+</section>
+<section class="search-section">
+    <div class="container">
+        <app-search></app-search>
+    </div>
+</section>
+<section class="work-process-section">
+    <div class="container">
+        <h2>How it Work</h2>
+        <div class="custom-row">
+            <div class="custom-colum search-colum">
+                <i><img src="../../../../assets/imges/work1.png" alt="work1"> </i>
+                <h5>SEARCH YOUR DEVICE MODEL AND GET IT'S PRICE</h5>
+                <p>Lorem ipsum dolor sit amet adipiscing elit aenean commodo ligula </p>
+            </div>
+            <div class="custom-colum services-colum">
+                <i><img src="../../../../assets/imges/work2.png" alt="work1"> </i>
+                <h5>GET A FREE PICK UP SERVICE</h5>
+                <p>Aenean massacum penatibus magnis Quisque rutrum aenean</p>
+            </div>
+            <div class="custom-colum ">
+                <i><img src="../../../../assets/imges/work3.png" alt="work1"> </i>
+                <h5>GET THE PRICE OF YOUR DEVICE</h5>
+                <p> Quisque rutrum aenean Aenean massacum penatibus magnis</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="device-category-section">
+    <div class="container-fluid">
+        <h2>Select Device Category</h2>
+
+        <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig1"
+            (init)="slickInit($event)" (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)"
+            (beforeChange)="beforeChange($event)">
+            <div ngxSlickItem class="slide" *ngFor="let slider of devices">
+                <img src="{{slider.img}}" alt="devices">
+                <p>{{slider.p}}</p>
+            </div>
+        </ngx-slick-carousel>
+    </div>
+</section>
+<section class="benefit-list-section">
+    <div class="container-fluid">
+        <div class="img-content-block">
+            <div class="content-block">
+                <div class="benefit-content">
+                    <h2>Benefits of Selling</h2>
+                    <p> Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem Nulla consequat massa quis
+                        enim. Donec pede justo.</p>
+                    <ul class="benefit-list">
+                        <li *ngFor="let benefit of list">{{benefit}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="img-block">
+            </div>
+        </div>
+    </div>
+</section>
+<app-find-devices></app-find-devices>
+<section class="contact-section">
+    <div class="container-fluid">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14686.812667732582!2d72.5005268!3d23.0346686!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e8352e403437b%3A0xdc9d4dae36889fb9!2sTatvaSoft!5e0!3m2!1sen!2sin!4v1697774835451!5m2!1sen!2sin"
+            width="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="container">
+        <div class="contact-details">
+            <h2>Contact Us</h2>
+            <p>Send an email. All fields whith an*are requred.</p>
+            <form>
+                <div class="custom-form-field">
+                    <mat-form-field appearance="outline">
+                        <input matInput placeholder="Name*">
+                    </mat-form-field>
+                </div>
+                <div class="custom-form-field">
+                    <mat-form-field appearance="outline">
+                        <input matInput placeholder="Email*">
+                    </mat-form-field>
+                </div>
+                <div class="custom-form-field">
+                    <mat-form-field appearance="outline">
+                        <input matInput placeholder="Phone No.">
+                    </mat-form-field>
+                </div>
+                <div class="custom-form-field custom-text-area">
+                    <mat-form-field appearance="outline">
+                        <textarea matInput placeholder="Message*"></textarea>
+                    </mat-form-field>
+                </div>
+                <div class="btn-wrapper">
+                    <button mat-raised-button class="btn blue-btn"> Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>

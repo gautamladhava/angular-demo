@@ -1,0 +1,72 @@
+@import "../../../assets/css/main.scss";
+.search-content {
+    background-color: $green_text;
+    padding: 15px 30px;
+
+    @include bp(smlg-max) {
+        padding: 10px 15px;
+    }
+
+    .search-devices {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+
+        p {
+            margin-bottom: 0;
+            color: $white;
+            font-size: 20px !important;
+            line-height: 1.2;
+
+            @include bp(md-max) {
+                font-size: 16px !important;
+            }
+
+            @include bp(xs-max) {
+                font-size: 15px !important;
+            }
+        }
+
+        i {
+            margin-right: 13px;
+            display: inline-flex;
+
+            img {
+                height: 25px;
+                width: 25px;
+            }
+        }
+
+    }
+
+    .input-block {
+        display: flex;
+        justify-content: space-between;
+
+        @include bp(smlg-max) {
+            flex-direction: column;
+        }
+
+        .custom-form-field {
+            width: 100%;
+            margin-right: 20px;
+            border-radius: 5px;
+            background-color: $white;
+            margin-bottom: 0 !important;
+
+            @include bp(smlg-max) {
+                margin-bottom: 15px !important;
+            }
+        }
+    }
+
+    .btn {
+        white-space: nowrap;
+        min-width: 180px !important;
+        padding: 13px 15px !important;
+
+        @include bp(smlg-max) {
+            max-width: 200px;
+        }
+    }
+}

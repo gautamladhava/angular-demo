@@ -1,0 +1,40 @@
+<section class="inner-banner-section">
+    <div class="container">
+        <app-search></app-search>
+    </div>
+</section>
+<section class="blog-section">
+    <div class="container">
+        <h2>Blog</h2>
+        <div class="blog-outer-wrap">
+            <div class="blog-wrap">
+                <div class="img-content-block" *ngFor="let data of table">
+                    <div class="img-block">
+                        <img src="{{data.img}}" alt="blog-img">
+                    </div>
+                    <div class="content-block">
+                        <h5><a routerLink="">{{data.heading}}</a> </h5>
+                        <ul class="icon-list">
+                            <li><a routerLink=""><i><img src="../../../../assets/imges/watch-icon.png"
+                                            alt="watch"></i>{{data.listitem1}}</a> </li>
+                            <li><a routerLink=""><i><img src="../../../../assets/imges/like-icon.png"
+                                            alt="like"></i>{{data.listitem2}}</a> </li>
+                            <li><a routerLink=""><i><img src="../../../../assets/imges/comment-icon.png" alt="comment">
+                                    </i> {{data.listitem3}}</a> </li>
+                        </ul>
+                        <p>{{data.p}}
+                            <a routerLink="/pages/blog-detail" class="read-more-btn" title="Read More">Read More</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-type-wrap">
+                <app-blog-type></app-blog-type>
+            </div>
+        </div>
+        <div class="btn-wrapper">
+            <button mat-raised-button color="primary" class="btn secondary-btn">Load More</button>
+        </div>
+    </div>
+</section>
+<app-find-devices></app-find-devices>
